@@ -1,0 +1,37 @@
+/* .ps-menu-button is for a tag of MenuItems from Navbar */
+
+.ps-menu-button {
+  background-color: #252c48 !important;
+  color: white !important;
+}
+.ps-menu-button:hover {
+  background-color: #335b8c !important;
+  color: white !important;
+}
+
+.ps-menu-button:active {
+  background-color: #335b8c !important;
+  color: white !important;
+}
+
+.ps-menu-button::selection {
+  background-color: #335b8c !important;
+  color: white !important;
+}
+
+.tab.active {
+  background: "yellow";
+  color: "black";
+}
+
+/* .ps-menu-button is for li tag of MenuItems from Navbar */
+
+.ps-menuitem-root {
+  border-bottom: 0.5px dotted rgb(128, 128, 128);
+  background-color: #252c48;
+}
+
+.css-1utli1x a {
+  padding-left: 20% !important;
+  /* background-color: #252c48 !important; */
+}

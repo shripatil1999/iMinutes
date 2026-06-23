@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define css class for global loading message to cover
+   screen during axios operations */
+
+html {
+  overflow: hidden;
+}
+
+.loading-indicator:before {
+  content: "";
+  background-image: url(/images/pumpacademy.jpg);
+  background-position: center 10px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  z-index: 1000;
+  min-width: 350px;
+  box-shadow: 1px 1px 50px 0px black;
+}
+
+.loading-indicator:after {
+  content: url(/images/spinner.gif);
+  background-attachment: fixed;
+  /* background-image: url(../public/images/spinner.gif); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 28%;
+  /* left: 45%; */
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 50%;
+  z-index: 1001;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transform: scale(0.2);
+}
+
+/* .loading-indicator {
+  pointer-events: none;
+} */
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* .InputLabelStyle{
+    font-size: 18px !important;
+    left: -4px !important;
+    line-height: 1.28em !important;
+} */
+
+.MuiSelect-iconOutlined {
+  background: #0d6efd !important;
+  height: 100% !important;
+  width: auto !important;
+  right: 0px !important;
+  top: 0px !important;
+  color: #fff !important;
+  border-radius: 0px 4px 4px 0px !important;
+}
+/* MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon */
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.datepicker {
+  outline: auto;
+}
+
+.rasta-stripes {
+  background-color: yellow;
+  /* Add more custom styles as needed */
+}
+
+.react-datepicker__month-container {
+  border-bottom: 1px solid grey;
+}
+
+.react-datepicker__input-time-container {
+  margin: 6px 0 6px 15px !important;
+  font-size: 14px !important;
+}
+
+.react-datepicker__month {
+  height: 194px;
+}
+
+.MuiPopover-paper {
+  padding-left: 0px !important;
+}
+
+.MuiAutocomplete-popper {
+  border: 1px solid black !important;
+}
+
+.alertShadow {
+  box-shadow: 3px 6px 20px 0px #00000061 !important;
+}
+
+.modalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modalDisplay {
+  background-color: white;
+  border-radius: 25px;
+  padding: 2%;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.bigModalOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.bigModalDisplay {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  width: 90%;
+  /* min-width: 350px; */
+  max-height: calc(100vh - 100px);
+  top: 50px;
+  left: 5%;
+  right: 5%;
+}
+
+.MuiInputBase-root {
+  height: 100%;
+}
+
+.MuiFormControl-root {
+  height: 100%;
+}
+
+.childTableHead {
+  background-color: rgb(247, 245, 245) !important;
+}
+
+/* Not mainly used */
+.schreenHeightCalc {
+  min-height: calc(100vh - 60px);
+  /* min-height: 100vh; */
+}
+
+.loginGradient {
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
